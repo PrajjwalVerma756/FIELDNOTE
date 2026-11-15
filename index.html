@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fieldnote is a calm, curated place to explore images by topic.">
+  <title>Fieldnote — Find a visual thread</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#" aria-label="Fieldnote home">
+      <span class="brand-mark" aria-hidden="true">f.</span>
+      <span>fieldnote</span>
+    </a>
+    <span class="header-note">A visual field guide</span>
+  </header>
+
+  <main class="page-shell">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">COLLECT A LITTLE INSPIRATION</p>
+      <h1 id="page-title">Follow a visual <em>thread.</em></h1>
+      <p class="intro-copy">Search the things you’re curious about. A world of images is just around the corner.</p>
+
+      <form class="search-panel" id="search-form">
+        <label for="search-input">What would you like to explore?</label>
+        <div class="search-row">
+          <input
+            type="search"
+            id="search-input"
+            name="query"
+            placeholder="Try “coastal architecture”"
+            autocomplete="off"
+          >
+          <button type="submit" id="search-button">Search <span aria-hidden="true">↗</span></button>
+        </div>
+      </form>
+
+      <div class="quick-picks" aria-label="Suggested searches">
+        <span class="quick-picks-label">A few starting points</span>
+        <div class="chip-row">
+          <button class="chip" type="button">Botanical</button>
+          <button class="chip" type="button">Quiet cities</button>
+          <button class="chip" type="button">Everyday objects</button>
+          <button class="chip" type="button">Wild landscapes</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section" aria-labelledby="results-heading">
+      <div class="results-heading-row">
+        <div>
+          <p class="eyebrow">YOUR COLLECTION</p>
+          <h2 id="results-heading">The open canvas</h2>
+        </div>
+        <p class="result-count" id="result-count">0 images so far</p>
+      </div>
+      <div id="results" class="results-grid" aria-live="polite" aria-label="Image search results"></div>
+      <div class="empty-state" id="empty-state">
+        <span class="empty-icon" aria-hidden="true">✳</span>
+        <h3>Your next discovery starts here.</h3>
+        <p>Enter a topic above and your image collection will appear in this space.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>fieldnote <span aria-hidden="true">·</span> made for curious eyes</span>
+    <span>Explore at your own pace.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
